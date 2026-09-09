@@ -1,9 +1,12 @@
-function About({ about }) {
+function About({ about, image }) {
     return (
-      <section>
-        <h2>About Me</h2>
+      <aside>
+        <img
+          src={image || "/images/blog-logo.png"}
+          alt="blog logo"
+        />
         <p>{about}</p>
-      </section>
+      </aside>
     );
   }
   
